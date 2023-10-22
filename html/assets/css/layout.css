@@ -1,0 +1,66 @@
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+html {
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+body {
+  overflow-y: visible;
+  position: relative;
+  height: unset;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.47rem;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #727171;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #727171;
+}
+
+@media (max-width: 1199px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=layout.css.map */

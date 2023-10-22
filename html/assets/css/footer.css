@@ -1,0 +1,181 @@
+footer {
+  background: rgb(255, 226, 132);
+}
+footer .item-wrap {
+  width: 80%;
+  height: 650px;
+  min-width: 1000px;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .item-wrap dl {
+  width: 45%;
+  min-width: 45%;
+}
+footer .item-wrap dl dt {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #154726;
+}
+footer .item-wrap dl dd {
+  color: #154726;
+  margin-top: 1.5625rem;
+}
+footer .item-wrap dl .util-group li {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+footer .item-wrap dl .util-group li a {
+  display: flex;
+  align-items: center;
+  color: #149473;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .item-wrap dl .util-group li a img {
+  width: 18px;
+}
+footer .item-wrap dl .util-group li a i {
+  width: 18px;
+}
+footer .item-wrap dl .util-group li a span {
+  margin-bottom: 2px;
+  margin-left: 10px;
+}
+footer .item-wrap dl .util-group li button {
+  margin-left: 10px;
+  background: none;
+  border: 1px solid #149473;
+  color: #149473;
+  padding: 3px 10px;
+  border-radius: 25px;
+  font-size: 13px;
+  transition: 0.2s;
+}
+footer .item-wrap dl .util-group li button:hover {
+  background: #149473;
+  color: #fff;
+}
+footer .item-wrap dl .util-group li button.active {
+  background: #149473;
+  color: #fff;
+}
+footer .item-wrap form {
+  width: 45%;
+  min-width: 45%;
+}
+footer .item-wrap form .form-inner .form-group input {
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid #154726;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+footer .item-wrap form .form-inner .form-group input.focusing {
+  border: 1px solid #ff3333;
+}
+footer .item-wrap form .form-inner .form-group textarea {
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  height: 200px;
+  background: none;
+  border: 1px solid #154726;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+footer .item-wrap form .form-inner .form-group textarea.focusing {
+  border: 1px solid #ff3333;
+}
+footer .item-wrap form .form-inner .form-group .error-text {
+  height: 30px;
+  margin-top: 5px;
+}
+footer .item-wrap form .form-inner .form-group .error-text p {
+  font-size: 0.937rem;
+  color: #ff3333;
+  display: none;
+}
+footer .item-wrap form .form-inner .form-group .error-text p i {
+  margin-top: 5px;
+  margin-right: 3px;
+}
+footer .item-wrap form .form-inner .form-group .error-text .show {
+  display: flex;
+}
+footer .item-wrap form .form-inner button {
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  border: none;
+  background: #154726;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+footer .item-wrap form .form-inner button:disabled {
+  background: #474444;
+}
+footer .copyright {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #154726;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .item-wrap {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  footer .item-wrap dl {
+    width: 100%;
+    margin-top: 50px;
+  }
+  footer .item-wrap dl .util-group {
+    display: flex;
+    align-items: center;
+  }
+  footer .item-wrap dl .util-group li {
+    margin-right: 30px;
+  }
+  footer .item-wrap form {
+    margin-top: 30px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  footer .item-wrap {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  footer .item-wrap dl {
+    width: 100%;
+    margin-top: 50px;
+  }
+  footer .item-wrap form {
+    margin-top: 30px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}/*# sourceMappingURL=footer.css.map */

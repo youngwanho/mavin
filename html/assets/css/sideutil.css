@@ -1,0 +1,136 @@
+aside .side-util {
+  z-index: 9;
+  position: fixed;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: 50px;
+}
+aside .side-util ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+aside .side-util ul li {
+  margin-bottom: 20px;
+}
+aside .side-util ul li a {
+  display: block;
+  width: -moz-fit-content;
+  height: 75px;
+  width: fit-content;
+  text-transform: uppercase;
+  border-radius: 50px;
+  color: #FFF;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(21, 71, 38, 0.7529411765);
+}
+aside .side-util ul li a .icon-box {
+  font-size: 13px;
+  float: right;
+  display: flex;
+  width: 75px;
+  height: 75px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+aside .side-util ul li a .icon-box i {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+aside .side-util ul li a .icon-box img {
+  width: 22px;
+  margin-bottom: 5px;
+}
+aside .side-util ul li .btn-link {
+  position: relative;
+  transition: opacity 0.3s;
+}
+aside .side-util ul li .btn-link:not(.btn-link-top) {
+  transition: width 0.3s;
+  width: 75px;
+}
+aside .side-util ul li .btn-link:hover {
+  width: 200px;
+}
+aside .side-util ul li .btn-link:hover .title {
+  opacity: 1;
+  visibility: unset;
+}
+aside .side-util ul li .btn-link::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+aside .side-util ul li .btn-link .title {
+  visibility: hidden;
+  position: absolute;
+  right: 85px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: #fff;
+}
+aside .side-util ul li .btn-plus {
+  display: none;
+}
+aside .side-util ul .item-plus {
+  margin: 0;
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  aside .side-util {
+    bottom: 30%;
+    right: 2.5vw;
+  }
+  aside .side-util ul li a {
+    height: 65px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  aside .side-util ul li a .icon-box {
+    font-size: 13px;
+    width: 65px;
+    height: 65px;
+  }
+  aside .side-util ul li a .icon-box i {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  aside .side-util ul li .btn-link {
+    margin-bottom: -100%;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s, margin-bottom 0.3s;
+  }
+  aside .side-util ul li .btn-link:not(.btn-link-top) {
+    width: 65px;
+  }
+  aside .side-util ul li .btn-link:hover {
+    width: 180px;
+  }
+  aside .side-util ul li .btn-link .title {
+    right: 85px;
+  }
+  aside .side-util ul li .btn-link.show {
+    margin-bottom: unset;
+    pointer-events: unset;
+    visibility: unset;
+    opacity: 1;
+  }
+  aside .side-util ul .item-plus {
+    margin-bottom: 20px;
+  }
+  aside .side-util ul .item-plus .btn-plus {
+    display: flex;
+    cursor: pointer;
+  }
+  aside .side-util ul .item-plus .btn-plus .hide {
+    display: none;
+  }
+}/*# sourceMappingURL=sideutil.css.map */

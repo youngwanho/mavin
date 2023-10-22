@@ -1,0 +1,228 @@
+// color
+$green-color: #154726;
+$yellow-color: #ffd550;
+$bg-color: #f8ecd3;
+
+footer {
+    background: rgb(255, 226, 132);
+
+    .item-wrap {
+        width: 80%;
+        height: 650px;
+        min-width: 1000px;
+        max-width: 1600px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        dl {
+            width: 45%;
+            min-width: 45%;
+
+            dt {
+                font-size: 1.75rem;
+                font-weight: 600;
+                color: $green-color;
+            }
+
+            dd {
+                color: $green-color;
+                margin-top: 1.5625rem;
+            }
+
+            .util-group {
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 15px;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        color: #149473;
+                        width: fit-content;
+
+                        img {
+                            width: 18px;
+                        }
+
+                        i {
+                            width: 18px;
+                        }
+
+                        span {
+                            margin-bottom: 2px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    button {
+                        margin-left: 10px;
+                        background: none;
+                        border: 1px solid #149473;
+                        color: #149473;
+                        padding: 3px 10px;
+                        border-radius: 25px;
+                        font-size: 13px;
+                        transition: 0.2s;
+
+                        &:hover {
+                            background: #149473;
+                            color: #fff;
+                        }
+
+                        &.active {
+                            background: #149473;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        form {
+            width: 45%;
+            min-width: 45%;
+
+            .form-inner {
+                .form-group {
+                    input {
+                        width: 100%;
+                        height: 60px;
+                        box-sizing: border-box;
+                        border-radius: 5px;
+                        background: none;
+                        border: 1px solid $green-color;
+                        margin-top: 10px;
+                        padding-left: 10px;
+                        font-size: 1rem;
+
+                        &.focusing {
+                            border: 1px solid #ff3333;
+                        }
+                    }
+
+                    textarea {
+                        width: 100%;
+                        font-size: 1rem;
+                        box-sizing: border-box;
+                        height: 200px;
+                        background: none;
+                        border: 1px solid $green-color;
+                        border-radius: 5px;
+                        margin-top: 10px;
+                        padding-left: 10px;
+                        padding-top: 10px;
+
+                        &.focusing {
+                            border: 1px solid #ff3333;
+                        }
+                    }
+
+                    .error-text {
+                        height: 30px;
+                        margin-top: 5px;
+
+                        p {
+                            font-size: 0.937rem;
+                            color: #ff3333;
+                            display: none;
+
+                            i {
+                                margin-top: 5px;
+                                margin-right: 3px;
+                            }
+                        }
+
+                        .show {
+                            display: flex;
+                        }
+                    }
+                }
+
+                button {
+                    width: 100%;
+                    height: 60px;
+                    margin-top: 10px;
+                    border: none;
+                    background: $green-color;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-size: 1rem;
+
+                    &:disabled {
+                        background: #474444;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        padding: 20px 0;
+        border-top: 1px solid $green-color;
+    }
+}
+
+// tablet
+@media (min-width: 768px) and (max-width: 991px) {
+    footer {
+        .item-wrap {
+            width: 90%;
+            min-width: 90%;
+            max-width: 90%;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+
+            dl {
+                width: 100%;
+                margin-top: 50px;
+
+                .util-group {
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        margin-right: 30px;
+                    }
+                }
+            }
+
+            form {
+                margin-top: 30px;
+                width: 100%;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+// tablet
+@media (min-width: 321px) and (max-width: 767px) {
+    footer {
+        .item-wrap {
+            width: 90%;
+            min-width: 90%;
+            max-width: 90%;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+
+            dl {
+                width: 100%;
+                margin-top: 50px;
+            }
+
+            form {
+                margin-top: 30px;
+                width: 100%;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

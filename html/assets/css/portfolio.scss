@@ -1,0 +1,355 @@
+// color
+$green-color: #154726;
+$yellow-color: #ffd550;
+$bg-color: #f8ecd3;
+
+.horizontal-sliders {
+  display: flex;
+  align-items: center;
+  flex-wrap: no-wrap;
+  height: 100vh;
+  background: #D8E0A5;
+  overflow-x: hidden;
+  border: none;
+  z-index: 2;
+
+  .item-slide {
+    width: 600px;
+    min-width: 600px;
+  }
+
+  .item-text {
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-left: 15vw;
+    margin-right: 10vw;
+
+    dl {
+      dt {
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: $green-color;
+      }
+
+      dd {
+        color: $green-color;
+        margin-top: 1.5625rem;
+      }
+
+      .btn-git {
+        margin-top: 2.187rem;
+        height: 45px;
+        width: 160px;
+        padding: 5px;
+
+        i {
+          margin-bottom: 2px;
+        }
+
+        span {
+          margin-bottom: 1px;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+
+  .item-card {
+    position: relative;
+    will-change: transform;
+    margin-right: 250px;
+
+    &.active {
+      .item-inner {
+        transform-origin: 50% 0%;
+        animation-name: shake;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+      }
+    }
+
+    .deco {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      // display: none;
+      z-index: 1;
+    }
+
+    .item-inner {
+      width: 100%;
+      height: 530px;
+      background: #fff;
+      -webkit-box-shadow: 0 10px 6px -6px #777;
+      -moz-box-shadow: 0 10px 6px -6px #777;
+      box-shadow: 0 10px 6px -6px #777;
+      border-radius: 5px;
+      padding: 3% 3% 0 3%;
+
+      figure {
+        height: 400px;
+        overflow: hidden;
+        box-shadow: inset 0px 0px 10px rgba(87, 87, 87, 0.321);
+
+        .info-wrap {
+          background: #00000086;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          color: #fff;
+
+          .info-inner {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+
+            p {
+              margin-top: 10px;
+            }
+          }
+        }
+
+        &:hover {
+          .info-wrap {
+            opacity: 1;
+          }
+        }
+      }
+
+      .text-box {
+        margin-top: 20px;
+        color: #333;
+        font-family: 'GangwonEduSaeeum_OTFMediumA';
+
+        p {
+          font-size: 1.375rem;
+        }
+
+        .title-box {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: -5px;
+
+          h3 {
+            font-size: 2.187rem;
+          }
+
+          .btn-guide {
+            width: 140px;
+            background-image: url(https://gwanho.s3.ap-northeast-2.amazonaws.com/images/visuals/btn_info.png);
+            height: 65px;
+            background-size: cover;
+            background-position: center center;
+            border: none;
+            outline: none;
+            transition: 0.2s;
+
+            span {
+              display: none;
+            }
+
+            &:hover {
+              background-image: url(https://gwanho.s3.ap-northeast-2.amazonaws.com/images/visuals/btn_info_hover.png);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .metapoker-card {
+    figure {
+      background: url(https://gwanho.s3.ap-northeast-2.amazonaws.com/images/thumbs/metapoker_thumb.jpg);
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+
+  .anitime-card {
+    figure {
+      background: url(https://gwanho.s3.ap-northeast-2.amazonaws.com/images/thumbs/anitime_thumb.jpg);
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+
+  .jbro-card {
+    figure {
+      background: url(https://gwanho.s3.ap-northeast-2.amazonaws.com/images/thumbs/jbro_thumb.jpg);
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+
+  .vaex-card {
+    figure {
+      background: url(https://gwanho.s3.ap-northeast-2.amazonaws.com/images/thumbs/vaex_thumb.jpg);
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+
+  .thinkblock-card {
+    figure {
+      background: url(https://gwanho.s3.ap-northeast-2.amazonaws.com/images/thumbs/thinkblock_thumb.jpg);
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+}
+
+// card animation
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(10deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  60% {
+    transform: rotate(-5deg);
+  }
+
+  70% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+// laptop
+@media (min-width: 992px) and (max-width: 1199px) {
+  .horizontal-sliders {
+    .item-slide {
+      width: 45%;
+      min-width: 45%;
+    }
+
+    .item-card {
+      .item-inner {
+        height: 500px;
+
+        figure {
+          height: 380px;
+        }
+      }
+    }
+  }
+}
+
+// tablet
+@media (min-width: 768px) and (max-width: 991px) {
+  .horizontal-sliders {
+    .item-slide {
+      width: 60%;
+      min-width: 60%;
+    }
+
+    .item-card {
+      .item-inner {
+        height: 500px;
+
+        figure {
+          height: 380px;
+        }
+      }
+    }
+  }
+}
+
+// mobile
+@media (min-width: 321px) and (max-width: 767px) {
+  .horizontal-sliders {
+    .item-slide {
+      width: 80vw;
+      min-width: 80vw;
+      margin-right: 150px;
+    }
+
+    .item-text {
+      dl {
+        .btn-git {
+          height: 35px;
+          width: 140px;
+        }
+      }
+    }
+
+    .item-card {
+      .deco {
+        position: absolute;
+        width: 80px;
+      }
+
+      .item-inner {
+        height: 445px;
+
+        figure {
+          height: 300px;
+
+          .info-wrap {
+            opacity: 1;
+          }
+        }
+
+        .text-box {
+
+          .title-box {
+            margin-top: 5px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            .btn-guide {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 1.75rem;
+              margin-top: 20px;
+              width: 100%;
+              background: $yellow-color;
+              color: #fff;
+              height: 45px;
+              border-radius: 5px;
+
+              &:hover {
+                background: $green-color;
+              }
+
+              span {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
