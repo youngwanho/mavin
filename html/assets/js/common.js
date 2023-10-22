@@ -1,5 +1,6 @@
 // green shock
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+ScrollTrigger.config({autoRefreshEvents: "visibilitychange,DOMContentLoaded,load"});
 
 // load component
 $(function () {
