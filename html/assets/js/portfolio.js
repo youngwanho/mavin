@@ -1,19 +1,21 @@
 const horizontal = $(".horizontal-sliders");
 const slideItems = gsap.utils.toArray(".item-slide");
 const slideCards = document.querySelectorAll(".horizontal-sliders .item-card");
+ScrollTrigger.config({autoRefreshEvents: "visibilitychange,DOMContentLoaded,load"});
 
 // gsap scroll trigger
 let scrollTween = gsap.to(slideItems, {
   xPercent: -150 * (slideItems.length - 1),
   ease: "none",
   scrollTrigger: {
-    trigger: horizontal,
     start: "top top",
+    trigger: horizontal,
     anticipatePin: 1,
     invalidateOnRefresh: true,
-    pin: horizontal,
+    pin: true,
     pinSpacing: true,
     scrub: 1,
+    // markers: true,
     end: "+=3000",
   },
 });
